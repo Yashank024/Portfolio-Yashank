@@ -1,0 +1,101 @@
+.tools-marquee-section {
+  position: relative;
+  width: 100%;
+  padding: 48px 0;
+  overflow: hidden;
+  background-color: var(--color-bg);
+}
+
+.marquee-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.marquee-row {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  will-change: transform;
+}
+
+/* Row Left (scrolling right-to-left) */
+.marquee-row-left .marquee-track {
+  animation: scroll-left 35s linear infinite;
+}
+
+/* Row Right (scrolling left-to-right) */
+.marquee-row-right .marquee-track {
+  animation: scroll-right 35s linear infinite;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 22px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  font-family: var(--font-main);
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(28, 21, 16, 0.02);
+  user-select: none;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.marquee-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-accent);
+  box-shadow: 0 6px 15px rgba(255, 140, 66, 0.1);
+}
+
+.marquee-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Slow down animation on hover for interactive feel */
+.marquee-row:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.3333%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-33.3333%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.marquee-bottom-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-border), transparent);
+}

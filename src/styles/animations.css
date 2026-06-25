@@ -1,0 +1,34 @@
+/* ==========================================================
+   ANIMATIONS.CSS  —  Global CSS Keyframes & Animation helper classes
+   ========================================================== */
+
+/* 1. Character floating animation */
+@keyframes characterFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+.anim-character-float {
+  animation: characterFloat 7s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* 2. Scroll hint indicator bouncing */
+@keyframes scrollBounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50%       { transform: translate(-50%, 10px); }
+}
+
+.anim-scroll-bounce {
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+
+/* 3. Text glow pulsation */
+@keyframes textGlow {
+  0%, 100% { text-shadow: 0 0 40px rgba(255,140,66,0.1); }
+  50%       { text-shadow: 0 0 60px rgba(255,140,66,0.25), 0 0 20px rgba(255,140,66,0.15); }
+}
+
+.anim-text-glow {
+  animation: textGlow 4s ease-in-out infinite;
+}

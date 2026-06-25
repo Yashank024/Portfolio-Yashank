@@ -1,0 +1,9 @@
+.contact__footer {
+  border-top: 1px solid var(--color-border);
+  padding: 40px 0;
+  font-size: 12px;
+  color: var(--color-text-dim);
+  letter-spacing: 0.08em;
+  text-align: center;
+  width: 100%;
+}

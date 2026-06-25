@@ -1,0 +1,400 @@
+/* ── About Section Redesign & RAG Architecture Diagram Styles ── */
+
+.highlight-text {
+  color: var(--color-accent);
+  font-weight: 800;
+}
+
+/* RAG Diagram Card */
+.rag-diagram-card {
+  background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-2) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  padding: 24px;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(28, 21, 16, 0.02);
+  width: 100%;
+}
+
+.rag-diagram-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.rag-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-green);
+  box-shadow: 0 0 10px var(--color-green);
+  animation: pulseGlow 2s infinite alternate;
+}
+
+.rag-diagram-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--color-text-dim);
+}
+
+/* RAG Layout Grid */
+.rag-grid {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 20px 24px;
+  position: relative;
+}
+
+/* Columns */
+.rag-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.rag-user-column {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.rag-engine-column {
+  gap: 24px;
+}
+
+/* Node Boxes */
+.rag-node-box {
+  background: rgba(28, 21, 16, 0.01);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  min-height: 88px;
+}
+
+.rag-node-box.active {
+  border-color: var(--color-accent);
+  background: rgba(255, 140, 66, 0.03);
+  box-shadow: 0 8px 25px rgba(255, 140, 66, 0.05);
+}
+
+.rag-node-box:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-accent);
+}
+
+.rag-node-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-top: 6px;
+}
+
+.rag-node-icon {
+  font-size: 18px;
+}
+
+/* Layer Card Boxes */
+.rag-layer-box {
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  padding: 16px;
+  background: rgba(28, 21, 16, 0.01);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rag-layer-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--color-text-dim);
+  border-bottom: 1px dashed var(--color-border);
+  padding-bottom: 6px;
+  margin: 0;
+  text-align: left;
+}
+
+/* Data Sources sub-grid */
+.rag-sources-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.rag-source-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.rag-source-icon {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+/* Sub-nodes inside Retrieval */
+.rag-sub-nodes {
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+
+.rag-sub-node {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-text);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+  position: relative;
+}
+
+.rag-sub-node-icon {
+  font-size: 15px;
+  color: var(--color-accent);
+}
+
+/* Vertical Connectors */
+.rag-connector-v {
+  width: 2px;
+  height: 28px;
+  background: var(--color-border);
+  margin: 0 auto;
+  position: relative;
+}
+
+.rag-connector-v-center {
+  width: 2px;
+  height: 24px;
+  background: var(--color-border);
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.pulse-dot-v {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--color-accent), transparent);
+}
+
+.pulse-dot-v::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: pulseDotV 2.2s infinite linear;
+  box-shadow: 0 0 8px var(--color-accent);
+}
+
+/* Horizontal Connectors */
+.rag-connector-h-right {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 26px;
+  height: 2px;
+  background: var(--color-border);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.rag-connector-h-left {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 26px;
+  height: 2px;
+  background: var(--color-border);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.rag-connector-sub-h {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 12px;
+  height: 2px;
+  background: var(--color-border);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.pulse-dot-h {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.pulse-dot-h::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  animation: pulseDotH 1.8s infinite linear;
+  box-shadow: 0 0 8px var(--color-accent);
+}
+
+.pulse-dot-h-left {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.pulse-dot-h-left::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  animation: pulseDotHLeft 1.8s infinite linear;
+  box-shadow: 0 0 8px var(--color-accent);
+}
+
+/* Layer variations */
+.rag-layer-box.retrieval-layer {
+  border-color: rgba(255, 179, 71, 0.35);
+  background: rgba(255, 179, 71, 0.02);
+  box-shadow: 0 4px 20px rgba(255, 179, 71, 0.04);
+}
+
+.rag-layer-box.augmented-layer {
+  border-color: rgba(255, 140, 66, 0.35);
+  background: rgba(255, 140, 66, 0.02);
+  box-shadow: 0 4px 20px rgba(255, 140, 66, 0.04);
+}
+
+.rag-layer-box.generation-layer {
+  border-color: rgba(255, 77, 0, 0.35);
+  background: rgba(255, 77, 0, 0.03);
+  box-shadow: 0 6px 25px rgba(255, 77, 0, 0.06);
+}
+
+/* Upward Pulse Dot */
+.pulse-dot-v-up {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, var(--color-accent), transparent);
+  position: relative;
+}
+
+.pulse-dot-v-up::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: pulseDotVUp 2.2s infinite linear;
+  box-shadow: 0 0 8px var(--color-accent);
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+@keyframes pulseDotV {
+  0% { top: 0; opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes pulseDotVUp {
+  0% { bottom: 0; opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { bottom: 100%; opacity: 0; }
+}
+
+@keyframes pulseDotH {
+  0% { left: 0; opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+@keyframes pulseDotHLeft {
+  0% { right: 0; opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { right: 100%; opacity: 0; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rag-grid {
+    grid-template-columns: 90px 1fr;
+    gap: 16px 14px;
+  }
+  
+  .rag-connector-h-right {
+    width: 16px;
+  }
+  
+  .rag-connector-h-left {
+    width: 16px;
+  }
+  
+  .rag-sub-nodes {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .rag-connector-sub-h {
+    display: none;
+  }
+  
+  .rag-node-box {
+    padding: 10px 8px;
+    min-height: 76px;
+  }
+  
+  .rag-node-title {
+    font-size: 11.5px;
+  }
+}

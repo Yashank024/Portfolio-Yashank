@@ -1,0 +1,79 @@
+/* ==========================================================
+   VARIABLES.CSS  —  Design tokens (Colors, Spacing, Typography)
+   New theme with a pure white background
+   ========================================================== */
+
+:root {
+  /* 1. Brand & Colors (redesigned for pure white theme) */
+  --color-bg:           #FFFFFF;
+  --color-accent:       #FF8C42;
+  --color-accent-2:     #FF4D00;
+  --color-accent-3:     #FFB347;
+  --color-accent-4:     #FF6B35;
+  --color-highlight:    #FFA060;
+  --color-green:        #10B981;
+
+  /* Text Contrast - Optimized for #FFFFFF */
+  --color-text:         #1C1510;
+  --color-text-muted:   #5C534B;
+  --color-text-dim:     #8D8075;
+  --color-text-faint:   #B8AC9F;
+
+  /* Surfaces & Cards - Tinted warm gray / white glass */
+  --color-surface:      rgba(252, 250, 247, 0.85);
+  --color-surface-2:    rgba(255, 255, 255, 0.65);
+  --color-surface-hover:rgba(252, 250, 247, 0.98);
+
+  /* Borders */
+  --color-border:       rgba(28, 21, 16, 0.08);
+  --color-border-2:     rgba(28, 21, 16, 0.05);
+  --color-border-accent:rgba(255, 140, 66, 0.25);
+  --color-border-glow:  rgba(255, 140, 66, 0.4);
+
+  /* Glow effects */
+  --color-glow:         rgba(255, 140, 66, 0.08);
+  --color-glow-2:       rgba(255, 77, 0, 0.12);
+
+  /* 2. Spacing Scale (4px base) */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* 3. Typography Scale */
+  --font-main: 'Inter', system-ui, sans-serif;
+  --text-hero:  clamp(48px, 14vw, 240px);
+  --text-h1:    clamp(32px, 4.5vw, 68px);
+  --text-h2:    clamp(24px, 3vw, 42px);
+  --text-h3:    clamp(18px, 2vw, 24px);
+  --text-h4:    clamp(16px, 1.5vw, 19px);
+  --text-body:  15.5px;
+  --text-small: 14px;
+  --text-xs:    12px;
+  --text-xxs:   11px;
+
+  --leading-tight:  1.05;
+  --leading-snug:   1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.8;
+
+  --tracking-tight:  -0.03em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.1em;
+  --tracking-wider:   0.2em;
+
+  /* 4. Breakpoint Tokens */
+  --bp-sm:  480px;
+  --bp-md:  768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+}

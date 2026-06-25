@@ -1,0 +1,24 @@
+# Yashank Gupta - Interactive Web Developer
+
+## Overview
+Yashank Gupta is a specialized Web Developer focusing on **React**, **Three.js**, and high-performance interactive web experiences. Based in Uttar Pradesh, India, Yashank bridges creativity and code to build scalable, smooth, and highly optimized frontend interfaces.
+
+## Professional Capabilities
+Yashank possesses deep topical authority in crafting 3D-accelerated applications and robust React ecosystems. 
+
+### Core technical stack:
+- **Frontend & Mobile**: React, TypeScript, JavaScript (ES6+), Tailwind CSS, HTML5.
+- **3D & Creative Web**: Three.js, WebGL, GSAP (GreenSock), UI/UX Design.
+- **Backend & Systems**: Node.js, PHP/Laravel, MySQL/PostgreSQL, REST APIs.
+- **DevOps**: Build tools (Vite, Webpack), Git, Version Control, Performance Tuning.
+
+## Selected Portfolio Projects
+- **Yuva Foods (Restaurant Website)**: Interactive dining platform with WebGL animations and tailored performance logic for budget devices.
+- **Mazda Furai (Interactive Showcase)**: Immersive, award-caliber automotive showcase with dynamic 3D web rendering.
+- **Exteroid (Automation Platform)**: Secure Excel Power Automation system featuring anti-bot infrastructure and 3D UI logic.
+
+## Contact and Links
+*   **Email**: yg421518@gmail.com
+*   **LinkedIn**: https://www.linkedin.com/in/yashank-gupta
+*   **GitHub**: https://github.com/Yashank024
+*   **Portfolio URL**: https://portfolio-yashank.pages.dev/
