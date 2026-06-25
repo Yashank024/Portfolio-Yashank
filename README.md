@@ -56,6 +56,16 @@ Modular execution systems for orchestrating, testing, and running complex agenti
 * **Core Pillars:** Agentic Workflows, Prompt Engineering, Structured AI Task Execution, Automated Workflows, Context Management.
 * **Key Focus:** Reusable AI skill architectures and productivity pipelines to shape the future of AI-assisted development.
 
+### 🎙️ IntelliMeet — AI Meeting Intelligence System
+An enterprise-grade AI Meeting Intelligence platform that transforms meeting transcripts, PDFs, and scanned documents into structured organizational intelligence.
+* **Tech Stack:** Next.js 15, FastAPI, Gemini 2.5 Flash, SQLite, ChromaDB (Vector DB), RAG, PaddleOCR, PyMuPDF, Resend API.
+* **Key Features:**
+  * **Hybrid RAG Architecture:** Seamless combination of structured relational SQL data and semantic vector database queries.
+  * **Document Processing:** Extraction of text from digital files (PyMuPDF) and scanned documents/images (PaddleOCR).
+  * **Structured AI Extraction:** Gemini-powered structuring of employees, projects, meetings, tasks, risks, and escalations.
+  * **Email Automation:** Background deadline alerts, task assignment notifications, and critical escalation alerts via Resend.
+  * **Event-Driven Processing:** Background workers, event dispatcher, and notification queues for async execution.
+
 ---
 
 ## 🎨 Frontend Engineering Projects
@@ -122,9 +132,9 @@ To work with forward-thinking organizations building next-generation digital pro
 This repository contains the source code for Yashank Gupta's **Interactive Web Portfolio**.
 
 ### 🛠️ Tech Stack of this Portfolio
-* **Framework:** React 18 / 19 + Vite
-* **Styling:** Tailwind CSS + Vanilla CSS Design Tokens
-* **3D Effects:** Three.js custom `FloatingLines` rendering system
+* **Framework:** React 19 + Vite
+* **Styling:** Vanilla CSS Custom Variables (Design Tokens) + Tailwind CSS
+* **Interactive Effects:** WebGL Lightning rendering system
 * **Animations:** GSAP + ScrollTrigger
 * **Deployment:** Cloudflare Pages
 

@@ -32,31 +32,52 @@ Web Developer specializing in React, Three.js, and high-performance interactive 
 
 ## 🚀 Projects
 
-### Yuva Foods — Restaurant Website (React + WebGL)
-**Live:** https://yuvafoods.netlify.app/
+### 🧠 AI & Cognitive Systems
 
-Built an interactive restaurant website using React (Vite), Tailwind CSS, and WebGL, delivering smooth animations, modern UI, and optimized performance for low-end devices.
-
----
-
-### Mazda Furai — Interactive Showcase Website (React + Tailwind CSS + WebGL)
-**Live:** https://mazdafurai.netlify.app/
-
-Developed an immersive showcase site with React (Vite), Tailwind CSS, and WebGL, featuring fluid animations, dynamic UI, and a high-performance responsive layout.
+#### KnowDoc AI — Enterprise AI Documentation Platform
+- **Live:** https://knowdoc.vercel.app/
+- **Tech Stack:** FastAPI, Next.js, Gemini AI, PaddleOCR, ChromaDB (Vector DB), Semantic Search, RAG.
+- An enterprise document intelligence system capable of extracting text from scanned PDFs, generating vector index embeddings, and enabling conversational, citation-aware querying.
 
 ---
 
-### Ahaanayau — Interactive FMCG Website (React + Tailwind)
-**Live:** https://ahaanayau-1.netlify.app/
-
-Created a clean, animated FMCG website using React (Vite) and Tailwind CSS, focusing on responsive design, smooth transitions, and consistent UI performance.
+#### Antigravity Skills — AI Workflow Engineering Platform
+- **Live:** https://github.com/Yashank024/Antigravity-Skills
+- **Tech Stack:** Agentic AI, Prompt Engineering, Workflows, Automation Pipelines.
+- Modular execution system for orchestrating, testing, and automating complex agentic workflows and developer pipelines.
 
 ---
 
-### Exteroid — Excel Power Automation (Modern Web)
-**Live:** https://exteroid.pages.dev/
+#### IntelliMeet — AI Meeting Intelligence System
+- **Live:** https://github.com/Yashank024/Intellimeet
+- **Tech Stack:** Next.js 15, FastAPI, Gemini 2.5 Flash, SQLite, ChromaDB, RAG, PaddleOCR, PyMuPDF, Resend API.
+- Enterprise AI platform that extracts structured employees, tasks, risks, and escalations from meeting conversations, enabling hybrid vector/SQL retrieval and automated task alert emails.
 
-Designed an interactive automation platform using HTML, CSS, and advanced ES6 JavaScript, integrating Three.js for AI-style 3D UI and implementing security layers such as bot protection and DevTools blocking.
+---
+
+### 🎨 Modern Web & Graphics
+
+#### Yuva Foods — Restaurant Website (React + WebGL)
+- **Live:** https://yuvafoods.netlify.app/
+- Built an interactive restaurant website using React (Vite), Tailwind CSS, and WebGL, delivering smooth animations, modern UI, and optimized performance for low-end devices.
+
+---
+
+#### Mazda Furai — Interactive Showcase Website (React + Tailwind CSS + WebGL)
+- **Live:** https://mazdafurai.netlify.app/
+- Developed an immersive showcase site with React (Vite), Tailwind CSS, and WebGL, featuring fluid animations, dynamic UI, and a high-performance responsive layout.
+
+---
+
+#### Ahaanayau — Interactive FMCG Website (React + Tailwind)
+- **Live:** https://ahaanayau-1.netlify.app/
+- Created a clean, animated FMCG website using React (Vite) and Tailwind CSS, focusing on responsive design, smooth transitions, and consistent UI performance.
+
+---
+
+#### Exteroid — Excel Power Automation (Modern Web)
+- **Live:** https://exteroid.pages.dev/
+- Designed an interactive automation platform using HTML, CSS, and advanced ES6 JavaScript, integrating Three.js for AI-style 3D UI and implementing security layers such as bot protection and DevTools blocking.
 
 ---
 
